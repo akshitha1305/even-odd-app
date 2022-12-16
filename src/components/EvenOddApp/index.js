@@ -3,21 +3,29 @@ import {Component} from 'react'
 import './index.css'
 
 class EvenOddApp extends Component {
-  state: {count: 0, isCountEven: true}
+  state = {count: 0, isCountEven: true}
 
   onClickingButt = () => {
     const {count} = this.state
+    console.log(count)
     const randomNum = Math.floor(Math.random() * 100)
+
     this.setState(prevState => ({count: prevState.count + randomNum}))
+
     if (count % 2 === 0) {
-      this.setState(prevState => ({isCountEven: prevState.isCountEven}))
+      this.setState({
+        isCountEven: true,
+      })
     } else if (count % 2 !== 0) {
-      this.setState(prevState => ({isCountEven: !prevState.isCountEven}))
+      this.setState({
+        isCountEven: false,
+      })
     }
   }
 
   render() {
     const {count, isCountEven} = this.state
+    console.log(count)
     const displayText = isCountEven ? 'Even' : 'Odd'
     return (
       <div className="bg-container">
