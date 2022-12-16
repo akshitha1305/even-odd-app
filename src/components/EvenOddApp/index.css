@@ -1,0 +1,44 @@
+/* Write your CSS here */
+.bg-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Roboto';
+}
+.card-container {
+  border-style: none;
+  border-radius: 10px;
+  background-image: linear-gradient(#ff6e7f, #bfe9ff);
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.button {
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.heading {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+.para1 {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+.para2 {
+  font-size: 18px;
+  text-align: center;
+}
